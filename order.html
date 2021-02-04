@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Order</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+<!-- Navigation (Sits on top) -->
+<div class="w3-bar w3-grey-light w3-card w3-left-align w3-large">
+<a href="home.html" class="w3-bar-item w3-button">SEvenTeen</a>
+
+<!-- Right-sided navbar links. Hide them on small screens -->
+  <div class="w3-right w3-hide-small">
+	<a href="Home.html" class="w3-bar-item w3-button" >Home</a>
+	<a href="About.html" class="w3-bar-item w3-button">About</a>
+	<a href="Order.html" class="w3-bar-item w3-button"style="background-color:lavender;">Order</a>
+	<a href="tryit.html" class="w3-bar-item w3-button">Try this</a>
+	<a href="contact.html" class="w3-bar-item w3-button">Contact Us</a>
+  </div>
+</div>
+
+<!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">HOW TO ORDER TO DO YOUR MAKE UP IN</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your make-up!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">Foundie Brush<span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">Color Corrector <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">Setting Spray <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="t1.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-red">
+            <p><b>Folcalure Eyeshadow Palette</b></p>
+            <p class="w3-opacity">Dengan sembilan warna untuk memberikan highlight dan contour pada mata. Ada warna terang seperti peach dan silver, yang tentunya sanagt pigmented</p>
+            <p>Price: Rp.780.000</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="t26.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-red">
+            <p><b>Brush Make-Up Set</b></p>
+            <p class="w3-opacity">Brush makeup jenis ini menggunakan bulu hewan sebagai bahan baku pembuatannya yang membuat tahan lama.</p>
+            <p>Price: Rp.1.000.000</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="t3.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-red">
+            <p><b>Venus Waterproof Mascara</b></p>
+            <p class="w3-opacity">Venus memformulasikan maskara ini dengan formula creamy plumping untuk membuat bulu mata terlihat lebih bervolume. </p>
+            <p>Price: Rp.500.000</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>ORDER</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> tax, $15 per product</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <h5>Follow Us</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <a href="https://www.facebook.com"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com"><i class="fa fa-instagram w3-hover-opacity"></i>
+    <a href="https://accounts.snapchat.com/"><i class="fa fa-snapchat w3-hover-opacity"></i>
+    <a href="https://www.pinterest.com"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://twitter.com"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by <a href="Landingpage.html" target="_blank" class="w3-hover-text-green">SEvenTeen</a></p>
+</footer>
+
+  </body>
+</html>
